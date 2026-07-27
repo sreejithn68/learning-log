@@ -11,20 +11,31 @@ def normalize(brightness):
     """Divide every value by the average of the list, so the baseline sits around
     1.0 and dips show up as values below 1.0.
     average = sum(brightness) / len(brightness)"""
-    # TODO
+    average = sum(brightness)/ len(brightness)
+    x = [b / average for b in brightness]
+    return x
     pass
 
 
 def find_dips(normalized, threshold=0.99):
     """Return the INDICES where normalized brightness drops below threshold.
     Hint: loop with enumerate(normalized) to get index + value."""
-    # TODO
-    pass
+    result = []
+    for i, value in enumerate (normalized):
+        if value < threshold:
+            result.append(i)
+    return result    
+    
+pass
 
 
 def deepest_dip(normalized):
     """Return the index of the single lowest brightness value."""
-    # TODO
+    best_index=0
+    for i, value in enumerate (normalized):
+        if value < normalized [best_index]:
+             best_index = i
+    return best_index    
     pass
 
 
