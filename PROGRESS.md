@@ -11,3 +11,5 @@ Format: `YYYY-MM-DD | session # | what I did | what I got stuck on`
 
 <!-- Add your line here after each session, e.g.: -->
 <!-- 2026-07-24 | #1 | Solved exercise 1 (functions & loops) | forgot loops need a running total -->
+2026-09-07 | #5 | Mapped my machine — no local repos existed at all | nothing was ever cloned; I had only been working in the browser
+2026-09-07 | #6 | Cloned to ~/Documents/learning-log, fixed git identity, set up token auth, swapped README | GitHub passwords do not work for git — needed a personal access token
